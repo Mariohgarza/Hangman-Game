@@ -12,8 +12,8 @@ var randomWord = words[Math.floor(Math.random () *(words.length))];
 
 //create list of songs	
 var songs = [];
-songs[0] = "/../images/Street_Fighter_II_SNES-Ken_Stage[Mp3Converter.net].mp3";
-songs[1] = "/../images/Street_Fighter_II_SNES-Ryu_Stage[Mp3Converter.net].mp3";
+songs[0] = "assets/images/Street_Fighter_II_SNES-Ken_Stage[Mp3Converter.net].mp3";
+songs[1] = "assets/images/Street_Fighter_II_SNES-Ryu_Stage[Mp3Converter.net].mp3";
 
 // create an array to hold _ _ _ _ _ values as long as the chosen word
 var lettersInWord = [];
@@ -144,13 +144,13 @@ document.onkeyup =   function playgame (event) {
 	 		//if attempts are 0 player loses
 	 		if(attempts === 0){
 	 			//loser song
-	 			ply.src = "/../images/Street_Fighter_II_SNES-Winner[Mp3Converter.net].mp3"
+	 			ply.src = "assets/images/Street_Fighter_II_SNES-Winner[Mp3Converter.net].mp3"
 	 			document.getElementById("gameOver").innerHTML = "GAME OVER, YOU LOSE";
 	 		}
 	 		// player wins
 	 		else{
 	 			//winner sound
-	 			ply.src = "/../images/Street_Fighter_II-You_Win_Perfect[Mp3Converter.net].mp3"
+	 			ply.src = "assets/images/Street_Fighter_II-You_Win_Perfect[Mp3Converter.net].mp3"
 	 			document.getElementById("gameOver").innerHTML = "CONGRATS! YOU WIN!";
 	 		}
 	 	}
