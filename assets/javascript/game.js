@@ -12,8 +12,8 @@ var randomWord = words[Math.floor(Math.random () *(words.length))];
 
 //create list of songs	
 var songs = [];
-songs[0] = "/Users/mari-0/Desktop/Street_Fighter_II_SNES-Ken_Stage[Mp3Converter.net].mp3";
-songs[1] = "/Users/mari-0/Desktop/Street_Fighter_II_SNES-Ryu_Stage[Mp3Converter.net].mp3";
+songs[0] = "../images/Street_Fighter_II_SNES-Ken_Stage[Mp3Converter.net].mp3";
+songs[1] = "../images/Street_Fighter_II_SNES-Ryu_Stage[Mp3Converter.net].mp3";
 
 // create an array to hold _ _ _ _ _ values as long as the chosen word
 var lettersInWord = [];
@@ -137,7 +137,6 @@ document.onkeyup =   function playgame (event) {
 	 	if (attempts===0 || lettersMatching.length === randomWord.length){
 	 		//music for winner or loser
 			var ply = document.getElementById('music');
-			ply.src = "/Users/mari-0/Desktop/Street_Fighter_II_SNES-Winner[Mp3Converter.net].mp3"
 	 		//show in html to press any to play gain
 	 		document.getElementById("playAgain").innerHTML = "PRESS ANY KEY TO PLAY AGAIN";
 	 		//set the variable playAgain so we can reset all variables of the game when user presses any key
@@ -145,13 +144,13 @@ document.onkeyup =   function playgame (event) {
 	 		//if attempts are 0 player loses
 	 		if(attempts === 0){
 	 			//loser song
-	 			ply.src = "/Users/mari-0/Desktop/Street_Fighter_II_SNES-Winner[Mp3Converter.net].mp3"
+	 			ply.src = "../images/Street_Fighter_II_SNES-Winner[Mp3Converter.net].mp3"
 	 			document.getElementById("gameOver").innerHTML = "GAME OVER, YOU LOSE";
 	 		}
 	 		// player wins
 	 		else{
 	 			//winner sound
-	 			ply.src = "/Users/mari-0/Desktop/Street_Fighter_II-You_Win_Perfect[Mp3Converter.net].mp3"
+	 			ply.src = "../images/Street_Fighter_II-You_Win_Perfect[Mp3Converter.net].mp3"
 	 			document.getElementById("gameOver").innerHTML = "CONGRATS! YOU WIN!";
 	 		}
 	 	}
