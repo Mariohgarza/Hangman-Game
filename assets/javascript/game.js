@@ -5,7 +5,7 @@ var userGuess = false
 //number of tries
 var attempts = 10;
 // create an array of words //
-var words = ["soccer","football","tenis","basketball"];
+var words = ["ryu","kenmasters","sagat","zangief","vega" , "guile"];
 // make it "random" //
 var randomWord = words[Math.floor(Math.random () *(words.length))];
 	console.log(randomWord);
