@@ -8,7 +8,7 @@ margin:0;
 padding:0;
 }
 .pic {
-	background-image: url(./assets/images/stage1.jpg);
+	background-image: url(../images/stage1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
