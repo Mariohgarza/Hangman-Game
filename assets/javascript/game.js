@@ -183,7 +183,6 @@ document.onkeyup =   function playgame (event) {
 var ryu = [];
 ryu[0] = "../images/ryu1.png";
 ryu[1] = "../images/ryu2.png";
-ryu[2] = "../images/ryu3.png";
 
 var ply2 = document.getElementById('ryu');
 for(i = 0; i< 250; i++){
@@ -195,8 +194,6 @@ for(i = 0; i< 250; i++){
 	ply2.src = ryu[1];
 	$(ply2).animate({height: '250px', opacity: '1'}, "slow");
 
-	ply2.src = ryu[2];
-	$(ply2).animate({height: '400px', opacity: '1'}, "slow");
 
 }
 
