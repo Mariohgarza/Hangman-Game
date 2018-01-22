@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html class="pic">
 <head>
 	<title>hangman game !</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="img" href="assets/images">
 </head>
-<body>
-<hi> HELLO </hi>
-<p><img src="file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/streetfighter2-white-logo.gif">Welcome to streetfighter Hangman Game </p>
+<body >
+<h1 class="header1"> Welcome to streetfighter Hangman Game </h1>
+<div class="container game">
 <h2 id="playAgain"></h2>
 <h2 id="attempts"> </h2>
 <h1 id="word"> </h1>
 <h2 id="tried"> </h2>
 <h1 id="gameOver"></h1>
-
+</div>
 <audio id="music" src="assets/images/Street_Fighter_II_SNES-Opening_Title[Mp3Converter.net].mp3" autoplay="true">
 <p>If you are reading this, it is because your browser does not support the audio element.     </p>
 </audio>
-
+<!-- <img src="file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/streetfighter2-white-logo.gif">  -->
+<div class="footstyle">
+	<img id="ryu" class="ryu"> 
+</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>

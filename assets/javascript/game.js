@@ -1,11 +1,12 @@
 	
 // make vars first //
 //helps us determine is the key entered was a hit or miss
+
 var userGuess = false
 //number of tries
 var attempts = 10;
 // create an array of words //
-var words = ["ryu","kenmasters","sagat","zangief","vega" , "guile"];
+var words = ["ryu","ken","sagat","zangief","vega", "guile", "chun-li", "dhalsim"];
 // make it "random" //
 var randomWord = words[Math.floor(Math.random () *(words.length))];
 	console.log(randomWord);
@@ -42,6 +43,8 @@ var playAgain = false;
 
 var gameSong = true;
 
+var showRyu = true;
+
 //To display attempts left
 document.getElementById("attempts").innerHTML = "You have " + attempts + " tries left!";
 
@@ -57,6 +60,8 @@ document.getElementById("tried").innerHTML = lettersTried;
 
 // ask for a letter //
 document.onkeyup =   function playgame (event) {
+
+
 	//resets the "YOU WIN" or "YOU LOSE" with empty ""
 	document.getElementById("gameOver").innerHTML = "";
 	//resets the "Start game" or "play gain" message with empty ""
@@ -173,4 +178,25 @@ document.onkeyup =   function playgame (event) {
 	//display the updated amount of tries left
 	document.getElementById("attempts").innerHTML = "You have " + attempts + " tries left!";
 // check if letter is on the word //
-}	
+}
+
+var ryu = [];
+ryu[0] = "file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/ryu1.png"
+ryu[1] = "file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/ryu2.png"
+ryu[2] = "file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/ryu3.png"
+
+var ply2 = document.getElementById('ryu');
+for(i = 0; i< 250; i++){
+
+	ply2.src = ryu[0];
+	$(ply2).animate({ height: '400px', opacity: '1',}, "slow");
+
+
+	ply2.src = ryu[1];
+	$(ply2).animate({height: '250px', opacity: '1'}, "slow");
+
+	ply2.src = ryu[2];
+	$(ply2).animate({height: '400px', opacity: '1'}, "slow");
+
+}
+

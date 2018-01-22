@@ -1,0 +1,35 @@
+.header1 {
+	font-size:50px;
+	font-weight:700px;
+	text-align:center;
+	color:white;
+font-family:"Comic Sans MS", "Comic Sans";
+margin:0;
+padding:0;
+}
+.pic {
+	background-image: url(file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/stage1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+   
+}
+.game {
+	font-size:30px;
+	font-weight:800px;
+	text-align:center;
+	color:white;
+font-family:"Comic Sans MS", "Comic Sans";
+
+}
+.footstyle {
+	position:fixed;
+	bottom:0;	
+	width:100%;
+}
+
+.ryu{
+	height:300px;
+
+}
