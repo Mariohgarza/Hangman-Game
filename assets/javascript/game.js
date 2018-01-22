@@ -181,9 +181,9 @@ document.onkeyup =   function playgame (event) {
 }
 
 var ryu = [];
-ryu[0] = "file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/ryu1.png"
-ryu[1] = "file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/ryu2.png"
-ryu[2] = "file:///Users/mari-0/Desktop/bootcamp_stuff/homework/Hangman-Game/assets/images/ryu3.png"
+ryu[0] = "../images/ryu1.png"
+ryu[1] = "../images/ryu2.png"
+ryu[2] = "../images/ryu3.png"
 
 var ply2 = document.getElementById('ryu');
 for(i = 0; i< 250; i++){
